@@ -1,5 +1,3 @@
-# src/core/inverter.py
-
 def inverter_string(s: str) -> str:
     """
     Inverte a ordem dos caracteres de uma string sem utilizar funções prontas de inversão.
@@ -19,3 +17,8 @@ def inverter_string(s: str) -> str:
         fim -= 1
 
     return ''.join(caracteres)
+
+def main():
+    string_to_invert = input("Digite a string que deseja inverter: ")
+    inverted_string = inverter_string(string_to_invert)
+    print(f"String invertida: {inverted_string}")
